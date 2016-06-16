@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Thu Jun 09 2016 07:24:40 GMT+0000 (UTC) -->
+<html lang="ja" data-wf-site="57496ffaeebf8e0a25983c24" data-wf-page="574a1d284b9cfa5e456df2c4">
+<head>
+  <meta charset="utf-8">
+  <title>event-registration2</title>
+  <meta property="og:title" content="event-registration2">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="../css/oic-matching.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Changa One:400,400italic","Varela:400","Droid Sans:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+</head>
+<body>
+  <div class="w-nav nav-bar" data-animation="default" data-collapse="all" data-duration="400">
+    <div class="w-clearfix container">
+      <a class="w-inline-block logo-link" href="../index.html">
+        <div class="logo">OIC Matching</div>
+      </a>
+      <div class="w-embed search">
+        <input type="text" class="search">
+      </div><a class="w-button search-button" href="../search.html">search</a>
+      <a class="w-inline-block tag-search-link" href="#"><img class="tag-search" src="../images/Tags_32.png">
+      </a>
+      <a class="w-inline-block account-link" href="#">
+        <div class="account">hidehide</div>
+        <div class="account-icon"></div>
+      </a>
+    </div>
+  </div>
+  <div class="breadcrumb">
+    <div class="bc-container"><a class="bc-link" href="../index.html">Top &gt;&nbsp;</a>
+      <div class="bc-list">イベント登録</div>
+    </div>
+  </div>
+  <div class="w-clearfix container main">
+    <div class="container-left">
+      <div class="w-clearfix user-block">
+        <div class="user-icon"><img src="../images/aae791462844d7d8ec6dac1d4fba9732.png" width="120">
+        </div>
+        <div class="user-info">
+          <div class="user-name">yamaguchi hideyasu</div>
+          <div class="interest-tag">興味のあるタグ:</div>
+          <div class="tag-block">
+            <div class="tag"><img class="tag-icon" src="../images/1464489280_06.Tags.png">
+              <div class="tag-title">PHP</div>
+            </div>
+            <div class="tag"><img class="tag-icon" src="../images/1464489280_06.Tags.png">
+              <div class="tag-title">IoT</div>
+            </div>
+          </div><a class="w-button profile-buttom" href="#">プロフィール変更</a>
+        </div>
+      </div>
+      <ul class="w-list-unstyled mypage-menu">
+        <li class="mypage-list">
+          <div class="title">イベント</div>
+          <a class="w-inline-block child" href="../mypage/edit.html"><img class="next-icon" height="12" src="../images/1465443853_right.png">
+            <div class="child-text">イベント管理</div>
+          </a>
+          <a class="w-inline-block child" href="../mypage/registration.html"><img class="next-icon" height="12" src="../images/1465443853_right.png">
+            <div class="child-text">イベント登録</div>
+          </a>
+          <a class="w-inline-block child" href="../mypage/participated.html"><img class="next-icon" height="12" src="../images/1465443853_right.png">
+            <div class="child-text">過去に参加したイベント</div>
+          </a>
+          <a class="w-inline-block child" href="../mypage/held.html"><img class="next-icon" height="12" src="../images/1465443853_right.png">
+            <div class="child-text">過去に開催したイベント</div>
+          </a>
+        </li>
+      </ul><a class="mypage-link bottom_border" href="#">ログアウト</a>
+    </div>
+    <div class="container-right">
+      <h3 class="h3-title border">イベント登録</h3>
+      <div class="w-form event-form">
+        <form data-name="Event Form" id="wf-form-Event-Form" method="post" name="wf-form-Event-Form">
+          <div class="input-div">
+            <label class="form-label" for="name">イベント名:</label>
+            <input class="w-input form-text" data-name="Name" id="name" maxlength="256" name="name" placeholder="event name" type="text">
+          </div>
+          <div class="input-div">
+            <label class="form-label" for="name-4">カテゴリー:</label>
+            <select class="w-select form-dropdown" data-name="small-category" id="small-category-2" name="small-category">
+              <option value="">Select one...</option>
+              <option value="First">First Choice</option>
+              <option value="Second">Second Choice</option>
+              <option value="Third">Third Choice</option>
+            </select>
+          </div>
+          <div class="input-div">
+            <label class="form-label" for="name-2">時間:</label>
+            <input class="w-input form-text form-small" data-name="Name 2" id="name-2" maxlength="256" name="name-2" placeholder="yyyy/mm/dd" type="text">
+            <input class="w-input form-text form-small" data-name="time" id="time" maxlength="256" name="time" placeholder="例) 15:00" required="required" type="text">
+            <div class="form-namisen">~</div>
+            <input class="w-input form-text form-small" data-name="Time 2" id="time-2" maxlength="256" name="time-2" placeholder="例) 17:00" required="required" type="text">
+          </div>
+          <div class="input-div">
+            <label class="form-label" for="name-4">場所:</label>
+            <select class="w-select form-dropdown" data-name="small-category" id="small-category-2" name="small-category">
+              <option value="">Select one...</option>
+              <option value="First">First Choice</option>
+              <option value="Second">Second Choice</option>
+              <option value="Third">Third Choice</option>
+            </select>
+          </div>
+          <div class="input-div">
+            <label class="form-label" for="name-4">定員:</label>
+            <input class="w-input form-text form-small" data-name="Name 4" id="name-4" maxlength="256" name="name-4" type="text">
+          </div>
+          <div class="input-div">
+            <label class="form-label" for="name-3">タグ:</label>
+            <input class="w-input form-text" data-name="Name 3" id="name-3" maxlength="256" name="name-3" placeholder="tag" type="text">
+            <div class="tag-block">
+              <div class="tag"><img class="tag-icon" src="../images/1464489280_06.Tags.png">
+                <div class="tag-title">PHP</div>
+              </div>
+              <div class="tag"><img class="tag-icon" src="../images/1464489280_06.Tags.png">
+                <div class="tag-title">PHP</div>
+              </div>
+              <div class="tag"><img class="tag-icon" src="../images/1464489280_06.Tags.png">
+                <div class="tag-title">PHP</div>
+              </div>
+              <div class="tag"><img class="tag-icon" src="../images/1464489280_06.Tags.png">
+                <div class="tag-title">PHP</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-div form-about">
+            <label class="form-label form-label-block" for="about-title">説明文タイトル:</label>
+            <input class="w-input form-about-title" data-name="about-title" id="about-title" maxlength="256" name="about-title" placeholder="title" required="required" type="text">
+            <label class="form-label form-label-block" for="about">詳細説明文:</label>
+            <textarea class="w-input form-about-textfield" data-name="about" id="about" maxlength="5000" name="about"></textarea><img class="form-about-add" src="../images/1464540424_add.png">
+          </div>
+          <div class="input-div">
+            <input class="w-button submit" data-wait="Please wait..." type="submit" value="公開する">
+            <input class="w-button submit delete" data-wait="Please wait..." type="submit" value="削除">
+          </div>
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
